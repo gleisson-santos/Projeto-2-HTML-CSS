@@ -1,0 +1,38 @@
+/* Geral */
+
+:root {
+    --vermelho: #d92123;
+    --primary-text-color: #fff;
+    --secondary-text-color: #191919;
+    --secondary-color: #868686;
+    --tertiary-color: #eff3f4;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Lato";
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+input[type="submit"] {
+    cursor: pointer;
+}
+
+/* Cabeçalho e Banner*/
+#header {
+    min-height: 90vh;
+    background-image: url("../img/main_banner4.png");
+    background-size: cover;
+    background-position: center;
+    color: var(--primary-text-color);
+    margin-bottom: 2rem;
+}
