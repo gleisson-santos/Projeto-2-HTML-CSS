@@ -35,4 +35,40 @@ input[type="submit"] {
     background-position: center;
     color: var(--primary-text-color);
     margin-bottom: 2rem;
+    position: relative;
+}
+
+#inner-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navbar {
+    display: flex;
+    gap: 2rem;
+    text-transform: uppercase;
+    margin-right: 2rem;
+}
+
+#brand {
+    background-color: var(--vermelho);
+    padding: 1rem;
+}
+
+#navbar a {
+    color: var(--primary-text-color);
+    font-weight: bold;
+    padding: 1rem;
+}
+
+.banner.active {
+    opacity: 1;
+}
+
+.banner {
+    max-width: 50%;
+    padding: 4rem;
+    opacity: 0;
+    position: absolute;
 }
