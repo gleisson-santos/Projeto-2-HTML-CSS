@@ -27,6 +27,13 @@ input[type="submit"] {
     cursor: pointer;
 }
 
+i {
+    background-color: var(--vermelho);
+    color: var(--primary-text-color);
+    font-size: 2.5rem;
+    padding: 2rem;
+  }
+
 /* Cabeçalho e Banner*/
 #header {
     min-height: 90vh;
@@ -46,7 +53,7 @@ input[type="submit"] {
 
 #navbar {
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
     text-transform: uppercase;
     margin-right: 2rem;
 }
@@ -71,4 +78,227 @@ input[type="submit"] {
     padding: 4rem;
     opacity: 0;
     position: absolute;
+    transition: 0.6s;
 }
+
+.banner h2 {
+    font-size: 4rem;
+    margin-bottom: 1.2rem;
+    position: relative;
+    z-index: 2;
+}
+
+.banner p {
+    font-size: 1.5rem;
+}
+
+.square {
+    display: block;
+    width: 150px;
+    height: 150px;
+    background-color: var(--vermelho);
+    position: absolute;
+    z-index: 1;
+    left: 20px;
+    top: 40px;
+
+}
+
+.dots {
+    display: flex;
+    gap: 2rem;
+    position: absolute;
+    bottom: 3rem;
+    left: 3rem;
+
+}
+
+.dot {
+    width: 20px;
+    height: 20px;
+    background-color: var(--secondary-color);
+}
+
+.dot.active {
+    background-color: var(--vermelho);
+}
+
+/* Areas de Atuação */
+
+.text-image-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.text-container {
+    flex: 2 1 0; 
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    justify-content: center;
+    text-align: right;
+
+}
+
+.section-subtitle {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--vermelho);
+}
+
+.section-title {
+    color: var(--secondary-text-color);
+    font-size: 1.7rem;
+}
+
+.btn {
+    padding: 1.2rem 1.8rem;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: var(--vermelho);
+    color: var(--primary-text-color);
+    align-self: end;
+}
+
+.image-container {
+    flex: 1 1 300px;
+    position: relative;
+}
+
+.image-container i {
+    position: absolute;
+    padding: 1.2rem;
+    background-color: var(--vermelho);
+    font-size: 2.2rem;
+}
+
+#other-services {
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    padding: 1.5rem;
+}
+
+.service i {
+    padding: 1rem;
+    background-color: var(--vermelho);
+    font-size: 1.5rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+}
+
+.service {
+    position: relative;
+}
+
+
+.service-info {
+    background-color: var(--tertiary-color);
+    padding: 2rem 1.4rem;
+    min-height: 250px;
+    margin-top: -3rem;
+    z-index: 2;
+    position: relative;
+}
+
+.service h4 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+/* Sobre nós */
+#about {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+}
+
+#about-text {
+    background-image: url("../img/pattern.png");
+    background-size: cover;
+    background-position: center;
+    color: var(--primary-text-color);
+    flex: 1 1 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    padding: 4rem 3rem;
+}
+
+#about-text .section-subtitle, 
+#about-text .section-title {
+    color: var(--primary-text-color);
+}
+
+#about-text i {
+    background-color: transparent;
+}
+
+.about-description {
+    display: flex;
+    align-items: center;
+}
+
+.about-description h4 {
+    font-size:  1.4rem;
+    margin-bottom: 1rem;
+}
+
+#about-data {
+    flex: 1 1 0;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+
+#about-data .data {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    margin-top: -1px;
+    margin-left: -1px;
+}
+
+#about-data .data:first-child {
+    border-bottom: 1px solid var(--secondary-text-color);
+    border-right: 1px solid var(--secondary-text-color);
+
+}
+#about-data .data:last-child {
+    border-top: 1px solid var(--secondary-text-color);
+    border-left: 1px solid var(--secondary-text-color);
+
+}
+
+#about-data .data i {
+    background-color: transparent;
+    color: var(--vermelho);
+    font-size: 4remn;
+    padding: 0;
+}
+
+.data .number {
+    font-size: 4rem;
+    font-weight: 900;
+}
+
+
+.data .text {
+    text-transform: uppercase;
+}
+.data .text:hover {
+    text-transform: uppercase;
+}
+
