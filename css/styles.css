@@ -575,6 +575,28 @@ i {
     border-bottom: 1px solid var(--vermelho);
 }
 
+
+.foo {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.foo h3 {
+    font-size: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.foo i {
+    color: #191919;
+    background-color:#fff;
+    padding: 0 5px;
+    font-size: 20px;
+
+}
 /* Resposivo Mobile */
 @media(max-width: 450px) {
 
